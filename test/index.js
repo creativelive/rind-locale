@@ -41,7 +41,7 @@ test('should "best" match a locale if possible', function(t) {
     });
     return locale(loc);
   }
-  var input = 'en-UK,en;q=0.8';
+  var input = 'en-UK;q=0.8';
   var match = getLocale(input);
   var expected = 'en-US';
   console.log('locales:', locales);

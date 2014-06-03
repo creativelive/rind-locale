@@ -44,7 +44,7 @@ function getLocale(opts) {
     // try to find a "best" match
     for (i = 0; i < rl; i++) {
       for (var j = 0, al = opts.locales.length; j < al; j++) {
-        if (requestLocales[i] === opts.locales[j].substring(0, 2)) {
+        if (requestLocales[i].substring(0, 2) === opts.locales[j].substring(0, 2)) {
           return opts.locales[j];
         }
       }
