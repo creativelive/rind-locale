@@ -1,0 +1,38 @@
+{
+  "name": "rind-locale",
+  "version": "0.0.1",
+  "description": "Find a locale match for a string of locale(s) in an array of [supported] locales",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/gulp/bin/gulp.js lint && node test"
+  },
+  "author": "Matthew Hadley (https://github.com/diffsky)",
+  "license": "MIT",
+  "devDependencies": {
+    "minimist": "^0.1.0",
+    "gulp-jsbeautifier": "0.0.2",
+    "confidence": "^0.12.1",
+    "gulp-eslint": "^0.1.7",
+    "gulp": "^3.6.2",
+    "gulp-diff": "^0.1.4",
+    "tape": "^2.13.1"
+  },
+  "dependencies": {},
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/creativelive/rind-locale.git"
+  },
+  "keywords": [
+    "rind",
+    "locale",
+    "i18n",
+    "locales"
+  ],
+  "bugs": {
+    "url": "https://github.com/creativelive/rind-locale/issues"
+  },
+  "homepage": "https://github.com/creativelive/rind-locale"
+}
