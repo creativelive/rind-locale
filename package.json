@@ -1,6 +1,6 @@
 {
   "name": "rind-locale",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Find a locale match for a string of locale(s) in an array of [supported] locales",
   "main": "index.js",
   "scripts": {
