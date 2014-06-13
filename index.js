@@ -7,14 +7,13 @@ function getLocale(opts) {
   }
 
   return function locale(acceptLang) {
-    var requestLocales;
-    if (!acceptLang) {
-      // fallback to default locale
+    if (!acceptLang || opts.locales.length === 1) {
+      // use default locale
       return opts.locales[0];
     }
 
     // pick out request langs from string
-    requestLocales = acceptLang.split(';');
+    var requestLocales = acceptLang.split(';');
     requestLocales = requestLocales[0].split(',');
     if (!requestLocales.length) {
       // fallback to default locale
@@ -27,15 +26,12 @@ function getLocale(opts) {
       var requestLang = requestLocale.match(/([a-z]+)/);
       var requestLoc = requestLocale.match(/-([A-Z]+)/);
       var searchLocale;
-
       if (requestLang) {
         searchLocale = requestLang[0];
       }
-
       if (requestLoc) {
         searchLocale += requestLoc[0];
       }
-
       if (opts.locales.indexOf(searchLocale) >= 0) {
         return searchLocale;
       }
